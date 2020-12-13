@@ -1,11 +1,15 @@
 .App {
+  background-image: url(https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
   max-width: 600px;
   margin: 0 auto;
-  border: 1px solid black;
-  border-radius: 4px;
+  margin-top: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .App h1 {
   font-size: 20px;
+  margin-top: 15px;
 }

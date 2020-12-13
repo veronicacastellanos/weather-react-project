@@ -1,7 +1,15 @@
+.form-control {
+  background-image: url(https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  color: white;
+}
+
 .Weather .city {
+  font-size: 15px;
   list-style-type: none;
   text-align: left;
-  margin-top: 20px;
+  margin-top: 55px;
+  margin-left: 10px;
+  padding: 10px;
 }
 
 .Weather img {
@@ -9,8 +17,20 @@
 }
 
 .temp {
-  font-size: 40px;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  list-style-type: none;
+  font-size: 50px;
+  margin-top: 55px;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+hr {
+  border: 20px, solid, black;
+}
+
+.stats {
+  margin-left: 60px;
+  font-size: 15px;
+  padding: 20px;
+  color: #29465d;
 }

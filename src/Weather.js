@@ -24,21 +24,15 @@ Clear
 </li>
 </ul>
 </div>
-</div>
-<div className="temp">
-<div className="row">
 <div className="col-6">
+<p className="temp">
 12°C
-</div>
-<div className="col-6">
-<img src="https://www.creativefabrica.com/wp-content/uploads/2020/04/21/sun-Icon-Vector-thin-line-Graphics-3920713-1-580x386.jpg"
-alt="Sunny" />
-</div>
+</p>
 </div>
 </div>
 <div className="row">
 <div className="col-6">
-<ul>
+<ul className="stats">
 <li>
 High: 12°C
 </li>
@@ -48,7 +42,7 @@ Low: 7°C
 </ul>
 </div>
 <div className="col-6">
-<ul>
+<ul className="stats">
 <li>
 Humidity: 76%
 </li>
