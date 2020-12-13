@@ -1,0 +1,16 @@
+.Weather .city {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.Weather img {
+  max-width: 100px;
+}
+
+.temp {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
