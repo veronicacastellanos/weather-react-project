@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 export default function Weather() {
@@ -10,7 +11,9 @@ const [weatherData, setWeatherData] = useState({});
 function handleResponse(response) {
 console.log(response.data);
 setWeatherData({
+ready: true,
 temperature: response.data.main.temp,
+date: new Date(response.data.dt * 1000),
 description: response.data.weather[0].description,
 high: response.data.main.temp_max,
 low: response.data.main.temp_min,
@@ -18,10 +21,9 @@ humidity: response.data.main.humidity,
 wind: response.data.wind.speed,
 });
 
-setReady(true);
 }
 
-if (ready) {
+if (weatherData.ready) {
 return (
 <div className="Weather">
 <form>
@@ -33,7 +35,7 @@ className="form-control" />
 <h2>Madrid</h2>
 <div className="row">
 <div className="col-6">
-<h3>Monday 14 December</h3>
+<h3><FormattedDate date={weatherData.date}/></h3>
 </div>
 <div className="col-6">
 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" className="cloud" viewBox="0 0 16 16">
@@ -46,7 +48,9 @@ className="form-control" />
 <p className="temp">{Math.round(weatherData.temperature)}°C</p>
 </div>
 <div className="col-6">
+<span className="text-capitalize">
 <p className="condition">{weatherData.description}</p>
+</span>
 </div>
 </div>
 <div className="row">
