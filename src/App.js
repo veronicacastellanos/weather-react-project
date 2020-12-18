@@ -7,8 +7,7 @@ function App() {
     <div className="App">
     <div className="container">
       <h1>All Time Weather</h1>
-      <Weather />
-    </div>
+      <Weather defaultCity="Madrid" />
         <footer>
           <a className="source"
             href="https://github.com/veronicacastellanos/weather-react-project"
@@ -17,6 +16,7 @@ function App() {
             Open-sourced on GitHub
           </a>
         </footer>
+        </div>
     </div>
   );
 }

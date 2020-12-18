@@ -16,7 +16,7 @@ minutes = `0${minutes}`;
 }
 return (
 <div>
-Last update at {day} {hours}:{minutes}
+{day} {hours}:{minutes}
 </div>
 );
 }
