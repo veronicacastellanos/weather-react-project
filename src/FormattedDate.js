@@ -16,6 +16,8 @@ minutes = `0${minutes}`;
 }
 return (
 <div>
+{" "}
+<br />
 {day} {hours}:{minutes}
 </div>
 );

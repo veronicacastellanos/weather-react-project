@@ -11,7 +11,7 @@ function App() {
         <footer>
           <a className="source"
             href="https://github.com/veronicacastellanos/weather-react-project"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             Open-sourced on GitHub
           </a>
